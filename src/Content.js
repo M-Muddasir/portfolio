@@ -237,18 +237,18 @@ export const content = {
     ],
     experience_details:[
       {
-        year:'11/2022-present',
-        company:'Boostify',
-        desigantion:'Frontend Developer',
-        description:'Working on running product as a Frontend Dev.',
-        location:'Remote Base'
-      },
-      {
         year:'07/2022-present',
         company:'Cloudpacer',
         desigantion:'Full Stack Devloper',
         description:'Development, reviewing the PR’s are the core responsibilitie.',
         location:'on-site'
+      },
+      {
+        year:'11/2022-06/2023',
+        company:'Boostify',
+        desigantion:'Frontend Developer',
+        description:'Working on running product as a Frontend Dev.',
+        location:'Remote'
       },
       {
         year:'07/2021-07/2022',
