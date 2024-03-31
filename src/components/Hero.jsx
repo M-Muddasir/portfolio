@@ -7,8 +7,7 @@ import LazyLoad from "react-lazyload";
 const Hero = () => {
   const { hero } = content;
   const openCV = () =>{
-    window.open(resume,'_blank')
-  }
+    window.open('/cv', '_blank');  }
   return (
     <section id="home" className="overflow-hidden">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">

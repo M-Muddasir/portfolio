@@ -17,7 +17,7 @@ const Experience = () => {
         </h4>
         <br />
         <div className="flex flex-col md:flex-row">
-          <div className="flex-1 flex flex-wrap gap-9 justify-center"> {/* Add justify-center class here */}
+          {/* <div className="flex-1 flex flex-wrap gap-9 justify-center">
             {experience.experience_logo.map((data, i) => (
               <div key={i}>
                 <div className="rounded-full w-20 h-20 flex items-center justify-center bg-blue-300" data-aos="fade-up">
@@ -28,7 +28,7 @@ const Experience = () => {
                 <p className="p-text flex justify-center">{data.description}</p>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className="flex-1 flex flex-col gap-5 md:container px-5 py-14">
             {experience.experience_details.map((data, i) => (
               <div key={i} className="flex flex-col md:flex-row gap-5">

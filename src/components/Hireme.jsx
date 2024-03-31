@@ -6,7 +6,7 @@ const Hireme = () => {
   const { Hireme } = content;
 
   const openCV = () =>{
-    window.open(resume,'_blank')
+    window.open('/cv', '_blank');
   }
   return (
     <section>

@@ -8,6 +8,7 @@ import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 import angular from "./assets/images/Skills/AngularJS-Shield.svg";
+import golang from "./assets/images/Skills/go-tutorial.jpg";
 import mongo from "./assets/images/Skills/mongodb.svg";
 import mysql from "./assets/images/Skills/mysql.png";
 import ts from './assets/images/Experience/ts.png';
@@ -18,11 +19,11 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/mobile.png";
 import services_logo3 from "./assets/images/Services/logo2.png";
 
-import lms from "./assets/images/projects/lms.png";
-import hrm from "./assets/images/projects/hrm.png";
-import inventroy from "./assets/images/projects/IM.png";
-import sfc from "./assets/images/projects/sfc.png";
-import boostify from "./assets/images/projects/boostify.png";
+import lms from "./assets/images/Projects/lms.png";
+import hrm from "./assets/images/Projects/hrm.png";
+import inventroy from "./assets/images/Projects/IM.png";
+import sfc from "./assets/images/Projects/sfc.png";
+import boostify from "./assets/images/Projects/boostify.png";
 import techgoat from './assets/images/Projects/techgoat.png';
 
 import avatar1 from "./assets/images/Testimonials/1.jpg";
@@ -35,8 +36,8 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsLinkedin } from "react-icons/bs";
+import { MdArrowForward, MdCall ,MdWhatsapp} from "react-icons/md";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { FaBriefcase } from "react-icons/fa";
@@ -86,7 +87,7 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "2.5+",
+        count: "3.5+",
         text: "Years of Experinse in Web development",
       },
       {
@@ -147,18 +148,18 @@ export const content = {
           "React is popular for building interactive and dynamic web applications.",
         ],
       },
-      {
-        name: "React Native",
-        para: "JavaScript framework for building mobile apps.",
-        logo: reactjs,
-        points: [
-          "Cross-platform mobile development using JavaScript.",
-          "Native-like performance and user experience.",
-          "Code reusability across iOS and Android platforms.",
-          "Fast development with hot-reloading and modular components.",
-          "Strong community support and a wide range of third-party libraries.",
-        ],
-      },
+      // {
+      //   name: "React Native",
+      //   para: "JavaScript framework for building mobile apps.",
+      //   logo: reactjs,
+      //   points: [
+      //     "Cross-platform mobile development using JavaScript.",
+      //     "Native-like performance and user experience.",
+      //     "Code reusability across iOS and Android platforms.",
+      //     "Fast development with hot-reloading and modular components.",
+      //     "Strong community support and a wide range of third-party libraries.",
+      //   ],
+      // },
       {
         name: "Node js",
         para: "JavaScript runtime for server-side applications.",
@@ -169,6 +170,18 @@ export const content = {
           "Node.js has a large ecosystem of open-source libraries and modules.",
           "It is ideal for building scalable and real-time applications.",
           "Node.js allows developers to use JavaScript for both front-end and back-end development.",
+        ],
+      },
+      {
+        name: "Golang",
+        para: "Go is a statically typed, compiled high-level programming language",
+        logo: golang,
+        points: [
+          "Go (Golang) is a statically typed, compiled programming language developed by Google.",
+          "It emphasizes simplicity, efficiency, and concurrency, making it ideal for building scalable and performant applications.",
+          "Go follows a minimalist approach, providing a clean and readable syntax with a small core language.",
+          "It offers built-in support for concurrency through goroutines and channels, enabling efficient parallel processing.",
+          "Go has a growing community and a rich standard library, along with a vibrant ecosystem of third-party packages for various use cases."
         ],
       },
       {
@@ -222,10 +235,10 @@ export const content = {
         logo: reactjs,
         description: "React",
       },
-      {
-        logo: reactjs,
-        description: "React Native",
-      },
+      // {
+      //   logo: reactjs,
+      //   description: "React Native",
+      // },
       {
         logo: mongo,
         description: "MongoDB",
@@ -236,8 +249,23 @@ export const content = {
       }
     ],
     experience_details:[
+
       {
-        year:'07/2022-present',
+        year:'03/2024-Present',
+        company:'Farmdar',
+        desigantion:'Full Stack Devloper',
+        description:"Development, reviewing PR's are the core responsibilities",
+        location:'on-site'
+      },
+      {
+        year:'09/2023-02/2024',
+        company:'Technology Brainz',
+        desigantion:'Senior Angular Devloper',
+        description:'Migrate Angular older version to latest, implement latest angular features',
+        location:'on-site'
+      },
+      {
+        year:'07/2022-08/2023',
         company:'Cloudpacer',
         desigantion:'Full Stack Devloper',
         description:'Development, reviewing the PR’s are the core responsibilitie.',
@@ -246,7 +274,7 @@ export const content = {
       {
         year:'11/2022-06/2023',
         company:'Boostify',
-        desigantion:'Frontend Developer',
+        desigantion:'Frontend Developer (Part Time)',
         description:'Working on running product as a Frontend Dev.',
         location:'Remote'
       },
@@ -258,7 +286,7 @@ export const content = {
         location:'on-site'
       },
       {
-        year:'12/2020-06/2022',
+        year:'12/2020-06/2021',
         company:'System Analyst, GC University',
         desigantion:'Junior Developer',
         description:'Started as a PHP Dev but shifted to MEAN stack after 2 months.',
@@ -371,7 +399,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "I am a JavaScript/TypeScript full-stack developer with 2.5+ years of experience, specializing in both web and mobile application development. I have a strong background in JavaScript frameworks such as Angular, React.js and React Native, allowing me to build cross-platform applications that run seamlessly on web and mobile devices",
+    para: "I am a JavaScript/TypeScript full-stack developer with 3.5+ years of experience, specializing in both web and mobile application development. I have a strong background in JavaScript frameworks such as Angular, React.js and React Native, allowing me to build cross-platform applications that run seamlessly on web and mobile devices",
     btnText: "Hire Me",
   },
   Contact: {
@@ -379,19 +407,30 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "muddasir0096@gmail.com",
+        text: "writemuddasir@gmail.com",
         icon: GrMail,
-        link: "mailto:muddasir0096@gmail.com",
+        link: "mailto:writemuddasir@gmail.com",
       },
       {
         text: "+92 304 9909599",
         icon: MdCall,
+        link: "tel://+923049909599",
+      },
+
+      {
+        text: "+92 304 9909599",
+        icon: MdWhatsapp,
         link: "https://wa.me/1234567890",
       },
       {
         text: "Muhammad Muddasir",
         icon: BsLinkedin,
         link: "https://www.linkedin.com/in/m-muddasir/",
+      },
+      {
+        text: "Muhammad Muddasir",
+        icon: BsGithub,
+        link: "https://github.com/M-Muddasir",
       },
     ],
   },
