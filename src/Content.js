@@ -21,7 +21,7 @@ import services_logo3 from "./assets/images/Services/logo2.png";
 
 import lms from "./assets/images/Projects/lms.png";
 import hrm from "./assets/images/Projects/hrm.png";
-import inventroy from "./assets/images/Projects/IM.png";
+import precise from "./assets/images/Projects/precise.png";
 import sfc from "./assets/images/Projects/sfc.png";
 import boostify from "./assets/images/Projects/boostify.png";
 import techgoat from './assets/images/Projects/techgoat.png';
@@ -49,6 +49,7 @@ import { MdOutlinePermContactCalendar } from "react-icons/md";
 //PDF
 import sfcPdf from './assets/pdf/sfc_compressed.pdf';
 import cmsPdf from './assets/pdf/cms_compressed.pdf';
+import precisePdf from './assets/pdf/precise_builder.pdf';
 import boostifyPdf from './assets/pdf/boostify-compressed.pdf';
 import techgoatPdf from './assets/pdf/techgoat_compressed.pdf';
 
@@ -87,11 +88,11 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "3.5+",
+        count: "5+",
         text: "Years of Experinse in Web development",
       },
       {
-        count: "10+",
+        count: "20+",
         text: "Projects Worked in my career",
       },
     ],
@@ -251,52 +252,24 @@ export const content = {
     experience_details:[
 
       {
-        year:'03/2024-Present',
-        company:'Farmdar',
-        desigantion:'Full Stack Devloper',
+        year:'08/2022-Present',
+        company:'Boostify',
+        desigantion:'Senior Full Stack Devloper / Engineer',
         description:"Development, reviewing PR's are the core responsibilities",
-        location:'on-site'
+        location:'remote'
       },
       {
-        year:'09/2023-02/2024',
-        company:'Technology Brainz',
-        desigantion:'Senior Angular Devloper',
+        year:'05/2021-07/2022',
+        company:'Topsyntax',
+        desigantion:'Angular / React Devloper',
         description:'Migrate Angular older version to latest, implement latest angular features',
         location:'on-site'
       },
       {
-        year:'07/2022-08/2023',
-        company:'Cloudpacer',
-        desigantion:'Full Stack Devloper',
+        year:'05/2019-04/2021',
+        company:'Government College University, Lahore',
+        desigantion:'Assocaite Software Engineer',
         description:'Development, reviewing the PR’s are the core responsibilitie.',
-        location:'on-site'
-      },
-      {
-        year:'11/2022-06/2023',
-        company:'Boostify',
-        desigantion:'Frontend Developer (Part Time)',
-        description:'Working on running product as a Frontend Dev.',
-        location:'Remote'
-      },
-      {
-        year:'07/2021-07/2022',
-        company:'Directorate of Information Technology',
-        desigantion:'Full Stack Developer / Team Lead',
-        description:'Worked on multiple applications as a JS / TS Dev.',
-        location:'on-site'
-      },
-      {
-        year:'12/2020-06/2021',
-        company:'System Analyst, GC University',
-        desigantion:'Junior Developer',
-        description:'Started as a PHP Dev but shifted to MEAN stack after 2 months.',
-        location:'on-site'
-      },
-      {
-        year:'08/2020-12/2021',
-        company:'System Analyst, GC University',
-        desigantion:'Internship',
-        description:'',
         location:'on-site'
       }
     ]
@@ -332,11 +305,11 @@ export const content = {
         image: lms,
         read_more:cmsPdf
       },
-      // {
-      //   title: "Human Resource Management",
-      //   image: hrm,
-      //   read_more:cmsPdf
-      // },
+      {
+        title: "Precise Builder",
+        image: precise,
+        read_more:precisePdf
+      },
       // {
       //   title: "Inventory Management",
       //   image: inventroy,
@@ -399,7 +372,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "I am a JavaScript/TypeScript full-stack developer with 3.5+ years of experience, specializing in both web and mobile application development. I have a strong background in JavaScript frameworks such as Angular, React.js and React Native, allowing me to build cross-platform applications that run seamlessly on web and mobile devices",
+    para: "I am a JavaScript/TypeScript full-stack developer with 5+ years of experience, specializing in both web and mobile application development. I have a strong background in JavaScript frameworks such as Angular, React.js and React Native, allowing me to build cross-platform applications that run seamlessly on web and mobile devices",
     btnText: "Hire Me",
   },
   Contact: {
@@ -420,12 +393,12 @@ export const content = {
       {
         text: "+92 304 9909599",
         icon: MdWhatsapp,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/+923049909599",
       },
       {
-        text: "Muhammad Muddasir",
+        text: "Muddasir Rafique",
         icon: BsLinkedin,
-        link: "https://www.linkedin.com/in/m-muddasir/",
+        link: "https://www.linkedin.com/in/muddasir-rafique-77b787285/",
       },
       {
         text: "Muhammad Muddasir",
@@ -435,6 +408,6 @@ export const content = {
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2023",
+    text: "All © Copy Right Reserved 2024",
   },
 };

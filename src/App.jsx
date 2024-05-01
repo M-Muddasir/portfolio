@@ -12,7 +12,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Experience from "./components/Experience";
-import CV from "./components/cv";
 
 const App = () => {
   useEffect(() => {
@@ -23,13 +22,8 @@ const App = () => {
     });
   }, []);
 
-  const getPathname = () => {
-    console.log(window.location.pathname)
-    return window.location.pathname;
-  };
   return (
     <div>
-      {getPathname() !== '/cv'? <>
       <Navbar />
       <Hero />
       <Skills />
@@ -40,10 +34,8 @@ const App = () => {
       <Hireme />
       <Contact />
       <footer className="p-3 text-center">
-        <p>muddasirRafique © All CopyRights Reserved 2023</p>
+        <p>muddasirRafique © All CopyRights Reserved 2024</p>
       </footer>
-      </>: <CV />}
-
     </div>
   );
 };
