@@ -24,6 +24,6 @@ npm run dev
 + [react icons](https://react-icons.github.io/react-icons/)
 
 
-# Demo
+## Demo
 + [M.Muddasir](https://muddasir.dev/)
 
