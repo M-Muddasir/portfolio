@@ -7,11 +7,15 @@ import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Certificates from "./components/Certificates";
+import Education from "./components/Education";
 import { useEffect } from "react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Experience from "./components/Experience";
+
+import { ThemeProvider } from "./ThemeContext";
 
 const App = () => {
   useEffect(() => {
@@ -23,20 +27,24 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Skills />
-      <Experience/>
-      <Projects />
-      <Service />
-      <Testimonials />
-      <Hireme />
-      <Contact />
-      <footer className="p-3 text-center">
-        <p>muddasirRafique © All CopyRights Reserved 2024</p>
-      </footer>
-    </div>
+    <ThemeProvider>
+      <div>
+        <Navbar />
+        <Hero />
+        <Skills />
+        <Experience/>
+        <Projects />
+        <Service />
+        <Certificates />
+        <Education />
+        <Testimonials />
+        <Hireme />
+        <Contact />
+        <footer className="p-3 text-center">
+          <p>muddasirRafique © All CopyRights Reserved 2024</p>
+        </footer>
+      </div>
+    </ThemeProvider>
   );
 };
 

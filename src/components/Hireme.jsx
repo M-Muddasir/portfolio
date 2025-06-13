@@ -9,8 +9,11 @@ const Hireme = () => {
     window.open(resume,'_blank')
   }
   return (
-    <section>
-      <div className="md:container px-5 pt-14">
+    <section style={{ background: 'var(--color-bg-secondary)' }}>
+      <div className="md:container px-5 pt-14" style={{ background: 'transparent' }}>
+      <h2 className="title" data-aos="fade-down">
+          {Hireme.fullName}
+        </h2>
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
         </h2>
@@ -33,12 +36,12 @@ const Hireme = () => {
           />
           <div
             data-aos="fade-left"
-            className="border-2 border-dark_primary max-w-sm
-           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
+            className="border-2 border-dark_primary max-w-sm p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
+            style={{ background: 'var(--color-bg)' }}
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white" onClick={openCV}>
+            <button className="btn" style={{ background: 'var(--color-accent)', color: '#fff' }} onClick={openCV}>
               {Hireme.btnText}
             </button>
           </div>

@@ -2,11 +2,14 @@ import { useState } from "react";
 import { content } from "../Content";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { createElement } from "react";
+import { useTheme } from "../ThemeContext";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
   const { nav } = content;
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="w-full flex justify-center">
@@ -32,6 +35,14 @@ const Navbar = () => {
             {createElement(item.icon)}
           </a>
         ))}
+        {/* Theme Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          className="ml-3 p-2 rounded-full focus:outline-none bg-white/60 hover:bg-gray-200 transition-colors"
+          aria-label="Toggle theme"
+        >
+          {theme === "light" ? <FaMoon size={20} /> : <FaSun size={20} />}
+        </button>
       </nav>
     </div>
   );

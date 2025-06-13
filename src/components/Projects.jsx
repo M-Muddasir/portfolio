@@ -33,8 +33,8 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-bg_light_primary" id="projects">
-      <div className="md:container px-5 pt-14 flex flex-col justify-between" style={{ height: '100%' }}>
+    <section id="projects" style={{ background: 'var(--color-bg-secondary)' }}>
+      <div className="md:container px-5 py-14" style={{ height: '100%' }}>
         <div>
           <h2 className="title" data-aos="fade-down">
             {Projects.title}
@@ -49,7 +49,8 @@ const Projects = () => {
             {Projects.project_content.map((content, i) => (
               <SwiperSlide
                 key={i}
-                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
+                className="rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
+                style={{ background: 'var(--color-bg)' }}
               >
                 <LazyLoad once>
                   <img src={content.image} alt="..." />

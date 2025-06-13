@@ -6,9 +6,9 @@ import LazyLoad from "react-lazyload";
 const Experience = () => {
   const { experience } = content;
   return (
-    <section id="experience">
+    <section id="experience" className="contact-section-theme">
       <Toaster />
-      <div className="md:container px-5 py-14">
+      <div className="md:container px-5 py-14" style={{ background: 'transparent' }}>
         <h2 className="title" data-aos="fade-down">
           {experience.title}
         </h2>
@@ -34,11 +34,11 @@ const Experience = () => {
               <div key={i} className="flex flex-col md:flex-row gap-5">
                 <div className="text-blue-500 md:w-30" data-aos="fade-right">{data.year}</div>
                 <div data-aos="fade-down">
-                  <h6>{data.desigantion}</h6>
-                  <p>{data.company}</p>
-                  <p className="font-bold">{data.description}</p>
+                  <h6 className="text-white">{data.designation}</h6>
+                  <p className="text-white">{data.company}</p>
+                  <p className="font-bold text-white">{data.description}</p>
                 </div>
-                <div className="ml-auto" data-aos="fade-left">{data.location}</div>
+                <div className="ml-auto text-white" data-aos="fade-left">{data.location}</div>
               </div>
             ))}
           </div>

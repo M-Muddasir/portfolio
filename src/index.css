@@ -10,13 +10,188 @@
 @tailwind utilities;
 
 @layer base {
-  /* * *{
-    border: 1px solid rgba(150,0,0,0.3);
-   box-sizing: border-box;
-  } */
+  /* Define CSS variables for theming */
+  :root {
+    /* Enhanced light theme colors */
+    --color-bg: #f7f8fa;
+    --color-bg-alt: #ffffff;
+    --color-bg-secondary: #eef2ff;
+    --color-skyblue: #06233F;
+    --color-skyblue-light: #BBEEFF;
+    --color-skyblue-dark: #60A5FA;
+    --color-card: #ffffff;
+    --color-border: #ddd6fe;
+    --color-text: #1e293b;
+    --color-text-secondary: #64748b;
+    --color-heading: #334155;
+    --color-accent: #6366f1;
+    --color-accent-hover: #4f46e5;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient-secondary: linear-gradient(135deg, #60a5fa 0%, #6366f1 100%);
+    --gradient-skyblue: linear-gradient(135deg, #87CEEB 0%, #60A5FA 100%);
+  }
+
+  /* Enhanced professional dark theme - only applies when data-theme="dark" */
+  [data-theme="dark"] {
+    --color-bg: #0f172a;
+    --color-bg-alt: #1e293b;
+    --color-bg-secondary: #1e293b;
+    --color-card: #1e293b;
+    --color-border: #334155;
+    --color-text: #f1f5f9;
+    --color-text-secondary: #94a3b8;
+    --color-heading: #f8fafc;
+    --color-accent: #818cf8;
+    --color-accent-hover: #6366f1;
+    --color-success: #34d399;
+    --color-warning: #fbbf24;
+    --color-error: #f87171;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    --gradient-primary: linear-gradient(135deg, #818cf8 0%, #c4b5fd 100%);
+    --gradient-secondary: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  }
+
+  /* Smooth transitions between themes */
+  body, section, div, button, a, input, textarea {
+    transition: all 0.3s ease;
+  }
+  
+  /* Dark mode overrides - these will only apply in dark mode */
+  [data-theme="dark"] h1,
+  [data-theme="dark"] h2,
+  [data-theme="dark"] h3,
+  [data-theme="dark"] h4,
+  [data-theme="dark"] h5,
+  [data-theme="dark"] h6 {
+    color: var(--color-heading);
+  }
+  
+  [data-theme="dark"] p,
+  [data-theme="dark"] span {
+    color: var(--color-text);
+  }
+  
+  [data-theme="dark"] section {
+    background-color: var(--color-bg);
+  }
+  
+  [data-theme="dark"] .card,
+  [data-theme="dark"] .bg-white {
+    background-color: var(--color-card) !important;
+    box-shadow: var(--shadow-card);
+    border-color: var(--color-border);
+  }
+  
+  /* Enhanced Card Styling */
+  .card {
+    background-color: var(--color-card);
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Enhanced Button Styling */
+  .btn, button.primary {
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 0.75rem;
+    border: none;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn:hover, button.primary:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+  
+  .btn:active, button.primary:active {
+    transform: translateY(1px);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  /* Secondary Button */
+  .btn-secondary {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  /* Enhanced Input Styling */
+  input, textarea, select {
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: var(--color-text);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    outline: none;
+  }
+  
+  [data-theme="dark"] input, 
+  [data-theme="dark"] textarea, 
+  [data-theme="dark"] select {
+    background-color: var(--color-bg-alt);
+    color: var(--color-text);
+    border-color: var(--color-border);
+  }
+  
+  /* Enhanced Section Styling */
+  section {
+    padding: 4rem 0;
+    position: relative;
+  }
+  
+  section.primary {
+    background-color: var(--color-bg-secondary);
+  }
+  
+  section.gradient {
+    background: var(--gradient-secondary);
+    color: white;
+  }
+  
+  /* Enhanced Typography */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  /* Keep normal styles for light theme */
   html {
     scroll-behavior: smooth;
   }
+  
   h1,
   h2,
   h3,
@@ -53,6 +228,21 @@
   textarea {
     @apply bg-transparent outline-none font-Poppins;
   }
+}
+
+.contact-section-theme {
+  background: var(--color-skyblue);
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+[data-theme="dark"] .contact-section-theme {
+  background: linear-gradient(135deg, #232a3b 0%, #111827 100%);
+  color: white;
+}
+
+.contact-section-theme h1, .contact-section-theme h2, 
+.contact-section-theme h3, .contact-section-theme h4 {
+  color: white;
 }
 
 @layer utilities {

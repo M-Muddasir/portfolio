@@ -31,10 +31,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-dark_primary text-white" id="contact">
+    <section id="contact" className="contact-section-theme" style={{ color: 'var(--color-text)' }}>
       <Toaster />
       <div className="md:container px-5 py-14">
-        <h2 className="title !text-white" data-aos="fade-down">
+        <h2 className="title" data-aos="fade-down">
           {Contact.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
@@ -71,8 +71,7 @@ const Contact = () => {
               required
             ></textarea>
             <button
-              className="btn self-start
-            bg-white text-dark_primary"
+              className="btn self-start" style={{ background: 'var(--color-accent)', color: '#fff' }}
             >
               Submit
             </button>
@@ -82,11 +81,10 @@ const Contact = () => {
               <div
                 key={i}
                 data-aos="fade-down"
-                data-aos-delay={i * 430}
                 className="flex items-center gap-2"
               >
                 <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="font-Poppins" href={content.link} target="_blank">
+                <a className="font-Poppins text-white" href={content.link} target="_blank">
                   {content.text}
                 </a>
               </div>
