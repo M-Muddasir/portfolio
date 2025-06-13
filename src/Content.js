@@ -646,7 +646,7 @@ export const content = {
       {
         degree: "MS in Data Science",
         institution: "PUCIT (Punjab University College of Information Technology)",
-        year: "2023 - Present",
+        year: "2024 - Present",
         description: "Specializing in Machine Learning, Statistical Analysis, Natural Language Processing, and MLOps.",
         courses: [
           "Machine Learning",
