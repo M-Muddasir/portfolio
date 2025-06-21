@@ -41,7 +41,7 @@ const App = () => {
         <Hireme />
         <Contact />
         <footer className="p-3 text-center">
-          <p>muddasirRafique © All CopyRights Reserved 2024</p>
+          <p>muddasirRafique © All CopyRights Reserved 2025</p>
         </footer>
       </div>
     </ThemeProvider>
